@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        .container {
+            border: 1px solid black;
+        }
+
+        .header {
+            background-color: darkblue;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h3 {
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        
+        <div class="first">
+            <h2>CAMP MAHOGANY</h2>
+            <p>
+                <b>
+                    UNITED ACHIEVERS <br>
+                    NON-PROFIT HOUSING <br>
+                    CORPORATION
+                </b>
+            </p>
+        </div>
+        <div class="second">
+            <p>
+                <b>905-796-2205 <br>
+                7820 McLaughlin Rd <br>
+                Brampton, ON L6Y 4W3</b>
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <main>
+            <form action="" method="POST">
+                <div class="child-info">
+                    <h3>CHILD INFORMATION</h3>
+                    <label for="name">Full Name</label>
+                    <input type="text" name="Full_Name" required><br>
+
+                    <label for="DOB">Date of Birth</label>
+                    <input type="date" name="Date_of_Birth" required>
+
+                    <label for="school">School</label>
+                    <input type="text" name="School_name" required><br>
+
+                    <label for="grade">Grade</label>
+                    <input type="text" name="Grade" required><br>
+
+                    <label for="address">Home Address</label>
+                    <input type="text" name="Address" required>
+
+                    <label for="apt">Apt/Unit</label>
+                    <input type="text" name="Apartment_number" required><br>
+
+                    <label for="city">City</label>
+                    <input type="text" name="City" required>
+
+                    <label for="postal-code">Postal Code</label>
+                    <input type="text" name="Postal_Code" required><br>
+
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" name="Contact" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="Email" required>
+                </div>
+
+                <div class="contact-info">
+                    <h3>CONTACT INFORMATION</h3>
+
+                    <label for="name">Parent/Guardian Name</label>
+                    <input type="text" name="Parent/Guardian_name" required><br>
+
+                    <label for="Home">Home Phone<label>
+                    <input type="tel" name="Home_Cell" required>
+
+                    <label for="Work">Work/Cell Phone</label>
+                    <input type="tel" name="Work_Contact" required><br>
+
+                    <label for="name">Emergency Contact Name</label>
+                    <input type="text" name="Emergency_contact" required>
+
+                    <label for="Phone">Emergency Phone</label>
+                    <input type="tel" name="Emergency_number" required><br>
+
+                    <label for="relation">Relationship to Child</label>
+                    <input type="text" name="Relationship" required>
+
+                    <label for="name">Alternate Phone</label>
+                    <input type="tel" name="Alternate_number" required><br>
+                </div>
+
+                <div class="additional-info">
+                    <h3>ADDITIONAL INFORMATION</h3>
+
+                    <label for="skills/interests">List Interests/Skills/Talents/Strengths</label>
+                    <textarea name="interests" rows="5"></textarea><br>
+
+                    <label for="School-Work/Behaviours">List areas of school work(English, Math, Reading, Science) and areas of behaviours (Shyness, Impatience, Public Speaking, Sharing) that you need help in</label>
+                    <textarea name="School-Work/Behaviours" rows="6"></textarea>
+
+                    <label for="health">Health Card Number</label>
+                    <input type="text" name="Health_Card_number" required><br>
+
+                    <label for="food-allergies">Food allergies/Health Conditions</label>
+                    <input type="radio" name="Allergies[yes]" value="yes" required>Yes
+                    <input type="radio" name="Allergies[no]" value="no" required>No
+
+                    <textarea name="food-allergies" rows="6"></textarea>
+                    <p>
+                        I consent to having <input type="text" name="Full_name" required> participate in Mahogany Placce activities. <br>
+
+                        I understand that program-related photos may be taken for educational purposes.
+                    </p>
+
+                    <label for="signature">Parent/Guardian Signature</label>
+                    <input type="text" name="Signature" required>
+
+                    <label for="date">Date</label>
+                    <input type="date" name="Date" required>
+                </div>
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
